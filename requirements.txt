@@ -2,5 +2,4 @@ Flask==2.0.3
 keyboard==0.13.5
 openai==1.14.3
 pvrecorder==1.2.2
-PyAudio==0.2.14
 gunicorn
