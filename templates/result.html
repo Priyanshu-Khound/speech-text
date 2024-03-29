@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transcription Result</title>
+</head>
+<script>
+  window.onload = function(){ 
+  // your code 
+
+  const someData = 'Recording...Press Q to stop'
+
+  document.getElementById('recordButton').onclick = function() {
+  //print in DOM element
+  document.getElementById('recording').innerHTML = someData;
+  //print on console
+  console.log(someData)
+  };
+};
+</script>
+<body>
+  <h1>Transcription</h1>
+  <p>{{ transcription_text }}</p>
+
+  <input type="button" onclick="location.href='/';" value="Try Another Audio" />
+  <!-- <form action="/record" method="post">
+    <button type="submit">Try Another Audio</button>
+</form> -->
+<p id="recording"></p>
+</body>
+</html>

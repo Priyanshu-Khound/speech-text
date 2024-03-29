@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text</title>
+</head>
+<script>
+    window.onload = function(){ 
+    // your code 
+
+    const someData = 'Recording...Press Q to stop'
+
+    document.getElementById('recordButton').onclick = function() {
+    //print in DOM element
+    document.getElementById('recording').innerHTML = someData;
+    //print on console
+    console.log(someData)
+    };
+};
+</script>
+<body>
+    <h1>Speech-to-Text</h1>
+
+    <p id="recording"></p>
+
+    <form action="/record" method="post">
+        <button id="recordButton" type="submit">Record Audio</button>
+    </form>
+    
+</body>
+</html>
